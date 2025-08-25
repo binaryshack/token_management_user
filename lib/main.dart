@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
 import 'package:token_management_user/controller/auth_contoller.dart';
+import 'package:token_management_user/controller/custom_text_field_provider.dart';
 import 'package:token_management_user/core/routes/routes.dart';
 import 'package:token_management_user/repository/auth_repository.dart';
 import 'core/firebase/firebase_options.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
           create: (_) =>
               AuthController(UserAuthRepository(FirebaseAuthService())),
         ),
+        ChangeNotifierProvider(create: (_) => CustometexfieldProvider()),
       ],
       child: MaterialApp.router(
         debugShowCheckedModeBanner: false,

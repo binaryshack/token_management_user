@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          const Center(child: Text("Welcome to Home Page 🎉")),
+          
           Text('data'),
         ],
       ),
