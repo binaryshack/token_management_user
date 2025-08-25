@@ -23,11 +23,17 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          
-          Text('data'),
-        ],
+      body: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center, // ✅ center row
+          children: [
+            ElevatedButton(onPressed: () {}, child: const Text("Button 1")),
+            const SizedBox(width: 16), // space between buttons
+            ElevatedButton(onPressed: () {}, child: const Text("Button 2")),
+            const SizedBox(width: 16),
+            ElevatedButton(onPressed: () {}, child: const Text("Button 3")),
+          ],
+        ),
       ),
     );
   }
