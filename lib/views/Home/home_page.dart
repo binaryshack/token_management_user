@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:token_management_user/core/widgets/my_text_field.dart';
+import 'package:go_router/go_router.dart';
+import 'package:provider/provider.dart';
+import 'package:token_management_user/controller/auth_contoller.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    TextEditingController name = TextEditingController();
+    final controller = Provider.of<AuthController>(context, listen: false);
 
     return Scaffold(
       appBar: AppBar(
@@ -32,16 +34,6 @@ class HomePage extends StatelessWidget {
             ElevatedButton(onPressed: () {}, child: const Text("Button 3")),
           ],
         ),
-      body: Column(
-        children: [
-          MyCustomTextFormField(
-            controller: name,
-            hintText: 'hintText',
-            validator: (value) =>
-                value!.isEmpty ? "Confirm password required" : null,
-          ),
-          Text('data'),
-        ],
       ),
     );
   }
