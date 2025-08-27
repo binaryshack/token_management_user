@@ -1,4 +1,7 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:token_management_user/core/widgets/my_coustom_button.dart';
 
 class RegistrationPage extends StatelessWidget {
   const RegistrationPage({super.key});
@@ -48,13 +51,11 @@ class RegistrationPage extends StatelessWidget {
             ),
             const SizedBox(height: 24),
 
-            // Register Button
-            ElevatedButton(
+            MyCustomButton(
+              isLoading: false,
               onPressed: () {
-                // Only UI for now (no logic)
-              },
-              child: const Text("Register"),
-            ),
+                log('message');
+              }, text: "Register"),
           ],
         ),
       ),

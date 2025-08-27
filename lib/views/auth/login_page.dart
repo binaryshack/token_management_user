@@ -38,6 +38,7 @@ class LoginPage extends StatelessWidget {
               },
               child: const Text("Login"),
             ),
+
             TextButton(
               onPressed: () => context.go("/signup"),
               child: const Text("Go to Signup"),
