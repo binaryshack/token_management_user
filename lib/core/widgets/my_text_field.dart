@@ -95,7 +95,7 @@ class MyCustomTextFormField extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w500,
-                  color: AppColors.black54,
+                  color: AppColors.textPrimary,
                 ),
               ),
             if (labelText != null && labelText!.isNotEmpty) const SizedBox(height: 8),
@@ -126,7 +126,7 @@ class MyCustomTextFormField extends StatelessWidget {
                 helperText: helperText,
                 errorStyle: errorStyle,
                 hintText: hintText,
-                hintStyle: hintStyle ?? TextStyle(color: AppColors.black38, fontSize: 14),
+                hintStyle: hintStyle ?? TextStyle(color: AppColors.textSecondary, fontSize: 14),
                 prefixIcon: prefixIcon != null
                     ? Icon(prefixIcon, color: AppColors.primary, size: 20)
                     : prefix,
@@ -148,7 +148,7 @@ class MyCustomTextFormField extends StatelessWidget {
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                   borderSide: BorderSide(
-                    color: borderColor ?? AppColors.grey300,
+                    color: borderColor ?? AppColors.borderDefault,
                     width: 1,
                   ),
                 ),
@@ -162,14 +162,14 @@ class MyCustomTextFormField extends StatelessWidget {
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                   borderSide: BorderSide(
-                    color: enabledBorderColor ?? AppColors.grey300,
+                    color: enabledBorderColor ?? AppColors.borderFocus,
                     width: 1,
                   ),
                 ),
                 errorBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                   borderSide: BorderSide(
-                    color: errorBorderColor ?? AppColors.red,
+                    color: errorBorderColor ?? AppColors.borderError,
                     width: 1,
                   ),
                 ),

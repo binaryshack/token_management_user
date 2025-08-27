@@ -19,7 +19,7 @@ class MyCustomButton extends StatelessWidget {
     super.key,
     required this.onPressed,
     this.backgroundColor = AppColors.primary,
-    this.textColor = AppColors.white,
+    this.textColor = AppColors.textWhite,
     this.width,
     this.height = 50,
     required this.text,
@@ -51,7 +51,7 @@ class MyCustomButton extends StatelessWidget {
                 width: 20,
                 height: 20,
                 child: CircularProgressIndicator(
-                  color: AppColors.white,
+                  color: AppColors.info,
                   strokeWidth: 2,
                 ),
               )
