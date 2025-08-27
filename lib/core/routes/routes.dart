@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:token_management_user/views/Home/home_page.dart';
-import 'package:token_management_user/views/RegisterUser/register_user.dart';
-import 'package:token_management_user/views/SplashScreen/splash_screen.dart';
+import 'package:token_management_user/views/register_user/register_user.dart';
+import 'package:token_management_user/views/splash_screen/splash_screen.dart';
 import 'package:token_management_user/views/auth/login_page.dart';
 import 'package:token_management_user/views/auth/signup_page.dart';
+import 'package:token_management_user/views/home_page/home_page.dart';
 
 // You can navigate like this anywhere in your app:
 
