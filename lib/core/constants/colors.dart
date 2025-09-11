@@ -38,6 +38,11 @@ class AppColors {
   // Others
   static const Color disabled = Color(0xFFBDBDBD); // Disabled buttons/icons
   static const Color shadow = Color(0x1A000000);   // Light black shadow
+
+  static Color grey = Colors.grey;
+  static Color black = Colors.black;
+  static Color grey300 = Colors.grey[300]!;
+  static Color grey600 = Colors.grey[600]!;
 }
 
 

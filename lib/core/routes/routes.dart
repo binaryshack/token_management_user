@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:token_management_user/views/auth/auth_page_main.dart';
 import 'package:token_management_user/views/register_user/register_user.dart';
 import 'package:token_management_user/views/splash_screen/splash_screen.dart';
-import 'package:token_management_user/views/auth/login_page.dart';
-import 'package:token_management_user/views/auth/signup_page.dart';
+
 import 'package:token_management_user/views/home_page/home_page.dart';
 
 // You can navigate like this anywhere in your app:
@@ -15,16 +15,6 @@ class AppRouter {
   static final GoRouter router = GoRouter(
     initialLocation: "/splash",
     routes: [
-      GoRoute(
-        path: "/login",
-        builder: (BuildContext context, GoRouterState state) =>
-            const LoginPage(),
-      ),
-      GoRoute(
-        path: "/signup",
-        builder: (BuildContext context, GoRouterState state) =>
-            const SignUpPage(),
-      ),
       GoRoute(
         path: "/home",
         builder: (BuildContext context, GoRouterState state) =>
@@ -39,6 +29,11 @@ class AppRouter {
         path: "/user_registration",
         builder: (BuildContext context, GoRouterState state) =>
             const RegistrationPage(),
+      ),
+      GoRoute(
+        path: "/user_auth_page",
+        builder: (BuildContext context, GoRouterState state) =>
+            const AuthPageMain(),
       ),
     ],
   );
