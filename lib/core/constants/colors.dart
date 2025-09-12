@@ -41,6 +41,7 @@ class AppColors {
 
   static Color grey = Colors.grey;
   static Color black = Colors.black;
+  static Color white = Colors.white;
   static Color grey300 = Colors.grey[300]!;
   static Color grey600 = Colors.grey[600]!;
 }
